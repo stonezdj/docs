@@ -1,10 +1,13 @@
 # Proposal: `Refactor admin server`
+
 Author: `Daojun Zhang/stonezdj`
 
 Discussion: 
 [5080](https://github.com/goharbor/harbor/issues/5808)
 [5525](https://github.com/goharbor/harbor/issues/5525)
-## Abstract 
+
+## Abstract
+
 Admin server is component used to manage the configuration for harbor. this proposal is going to provide a simple and mantainable configuration management.
 
 ## Background
@@ -31,18 +34,24 @@ Because refactor adminserver involve lots of code change, in order to We are goi
 4. Refactor configuration item management, provide a unified type conversion, validation, default value setting, read, write.
 
 ## Non-Goals
+
  It is only a refactor of adminserver, no new feature.
 
 ## Rationale
+
  [A discussion of alternate approaches and the trade offs, advantages, and disadvantages of the specified approach.]
 
 ## Compatibility
+
   1. The admin server container is only used internal, after remove adminserver container,  some test scripts to ping the status of adminserver container might fail, need to remove it.
+
   2. Some test automation need to updated to configure user settings.
+
   3. Harbor tile configuration implementation need to change for some user setting is not include in harbor.cfg.
 
 
 ## Implementation
+
  Breakdown into following work items, Daojun Zhang will work on this items in harbor 1.7.0. 
 
 1. Remove adminserver container.
@@ -53,5 +62,8 @@ Because refactor adminserver involve lots of code change, in order to We are goi
 
 4. Refactor configuration item management.
 
+5. Change harbor tile configurations
+
 ## Open issues (if applicable)
+
 No
