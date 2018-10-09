@@ -16,10 +16,10 @@ In previous implementation of harbor admin server, it is a dependent http server
 
 We are going to refactor the admin server with following tasks.
 
-1. Remove adminserver container, all configuration related API is handled by core api. also include migrate some other admin server related API to core api. 
+1. Remove adminserver container, all configuration related API is handled by core api. also include migrate some other admin server related API to core api.
 
 2. Seperate user settings from harbor.cfg, and keep system settings in harbor.cfg, and system setting is set to env and can not change. user setting are read/write by core api, system settings is read only.
 
 3. Remove adminserver related build script, docker file and code.
 
-4. Refactor configuration item management, provide a unified type conversion, validation, default value setting, read, write
+4. Refactor configuration item management, provide a unified type conversion, validation, default value setting, read, write.
