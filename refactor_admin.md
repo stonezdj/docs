@@ -14,7 +14,7 @@ In previous implementation of harbor admin server, it is a dependent http server
 
 # Proposal
 
-We are going to refactor the admin server with following task.
+We are going to refactor the admin server with following tasks.
 
 1. Remove adminserver container, all configuration related API is handled by core api.
 
