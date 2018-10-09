@@ -22,4 +22,4 @@ We are going to refactor the admin server with following tasks.
 
 3. Remove adminserver related build script, docker file and code.
 
-4. Refactor configuration item management, provide a unified type conversion, validation, default value setting
+4. Refactor configuration item management, provide a unified type conversion, validation, default value setting, read, write
